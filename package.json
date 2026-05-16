@@ -1,0 +1,28 @@
+{
+  "name": "showfinder",
+  "version": "1.0.0",
+  "description": "The application uses the TVMaze API to retrieve show information such as titles, images, genres, ratings, summaries, and schedules.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '*'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuradHabtu/final-project.git"
+  },
+  "author": "Murad Habtu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuradHabtu/final-project/issues"
+  },
+  "homepage": "https://github.com/MuradHabtu/final-project#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.4",
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "usa-state-validator": "^1.0.6"
+  }
+}
