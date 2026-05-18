@@ -19,15 +19,51 @@ ShowFinder is designed for modern desktop browsers, including:
 
 ## Deployed Application
 
-vercel link
+https://final-project-eight-liart.vercel.app/
 
 ## Developer Manual
 
 ### How to Install the Application
 
-Clone the repository:
-
-```bash
 git clone https://github.com/MuradHabtu/final-project.git
 cd final-project
-```
+npm install
+
+### How to Run the Application Locally
+
+Create a .env file with:
+
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+
+Then run:
+
+npm start
+
+Open:
+
+http://localhost:3000
+
+### How to Run Tests
+
+There are currently no automated tests.
+
+### API Endpoints
+
+GET /api/shows/search?q=showname  
+Searches TVMaze for shows matching the user query.
+
+GET /api/shows/trending  
+Gets shows currently airing in the United States.
+
+GET /api/favorites  
+Gets saved favorite shows from Supabase.
+
+POST /api/favorites  
+Saves a selected show to the Supabase favorites table.
+
+### Known Bugs
+
+- Duplicate favorites can currently be saved more than once.
+- Some TVMaze shows do not have ratings or images.
+- Favorites require the Supabase table and environment variables to be configured correctly.
