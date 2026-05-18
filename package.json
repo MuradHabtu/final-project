@@ -4,7 +4,8 @@
   "description": "The application uses the TVMaze API to retrieve show information such as titles, images, genres, ratings, summaries, and schedules.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e '*'",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
